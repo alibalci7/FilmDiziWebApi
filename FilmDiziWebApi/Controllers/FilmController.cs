@@ -4,9 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace FilmDiziWebApi.Controllers
@@ -14,7 +11,7 @@ namespace FilmDiziWebApi.Controllers
     public class FilmController : ApiController
     {
 
-        public List<Film> GetFilmleriListele(float imdbmin, float imdbmax,int yilmin, int yilmax, int id = 0, int adet = 10)
+        public List<Film> GetFilmleriListele(float imdbmin, float imdbmax, int yilmin, int yilmax, int id = 0, int adet = 10)
         {
             List<Film> filmler = new List<Film>();
             DataTable dt;
